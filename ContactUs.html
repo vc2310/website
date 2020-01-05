@@ -7,83 +7,137 @@
 
 <head>
     <title>Contact Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada:700|Permanent+Marker|Titillium+Web&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="container">
 
-    <div id="nav bar">
-        <img src="images/TempCompanyLogo.png">
-        <a href="mainpage.html">Home</a>
-        <a href="Ayurveda.html">About Ayurveda</a>
-        <a href="services.html">Services</a>
-        <a href="products.html">Products</a>
-        <a href="ContactUs.html">Contact Us</a>
-        <a href="https://www.facebook.com/">Facebook Page</a>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand">AYURHEB</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="mainpage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Ayurveda.html">About Ayurveda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="products.html" id="navbarProducts" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Products
+              </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarProducts">
+                            <a class="dropdown-item" href="products.html">LiverCare</a>
+                            <a class="dropdown-item" href="products.html">BrainCare</a>
+                            <a class="dropdown-item" href="products.html">BowelCare</a>
+                            <a class="dropdown-item" href="products.html">Probiotic</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="products.html">All Products</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ContactUs.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://www.facebook.com/">Facebook Page <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <h1>Contact Information</h1>
+
+
+
+
+        <div class="container">
+            <div class="row content">
+                <div class="col-lg-6">
+                    <p><strong>Phone Number:</strong> (647)-123-456</p>
+                    <p><strong>Address:</strong> 1 street north</p>
+                    <h3>Store Timings:</h3>
+                    <table class="table">
+                        <tr>
+                            <th>Day</th>
+                            <th>Time</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>11:00am to 6:00pm</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>11:00am to 6:00pm</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>11:00am to 6:00pm</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>11:00am to 6:00pm</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>11:00am to 6:00pm</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>11:30am to 5:30pm</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>By Appointments Only</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+                <div class="col-lg-6">
+                    <div id="form">
+                        <h4>Queries</h4>
+                        For any other questions, comments or clarifications, please fill out the form underneath:
+                        <form class="m-3">
+                            <fieldset>
+                                <label>Name:<br><input placeholder="Name"></label>
+                                <br>
+                                <label>Email Address:<br><input type="email" placeholder="something@example.com"></label>
+                                <br>
+                                <label>Contact Number:<br><input type="text" placeholder="***-***-****"></label>
+                                <br>
+                                <label>Description:</label>
+                                <br><textarea name="message" rows="8" cols="50" placeholder="Write the description"></textarea>
+                                <br>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=1%20University%20Dr%2C%20Athabasca%2C%20AB%20T9S%203A3+(Athabasca%20University)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0"
+            scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
     </div>
 
-    <h1>Contact Information</h1>
 
-    <div id="Company info">
-        <img src="images/map.PNG">
-        <p><strong>Phone Number:</strong> (647)-123-456</p>
-        <p><strong>Address:</strong> 1 street north</p>
-
-        <h3>Store Timings:</h3>
-        <table border="2">
-            <tr>
-                <th>Day</th>
-                <th>Time</th>
-            </tr>
-            <tr>
-                <td>Monday</td>
-                <td>11:00am to 6:00pm</td>
-            </tr>
-            <tr>
-                <td>Tuesday</td>
-                <td>11:00am to 6:00pm</td>
-            </tr>
-            <tr>
-                <td>Wednesday</td>
-                <td>11:00am to 6:00pm</td>
-            </tr>
-            <tr>
-                <td>Thursday</td>
-                <td>11:00am to 6:00pm</td>
-            </tr>
-            <tr>
-                <td>Friday</td>
-                <td>11:00am to 6:00pm</td>
-            </tr>
-            <tr>
-                <td>Saturday</td>
-                <td>11:30am to 5:30pm</td>
-            </tr>
-            <tr>
-                <td>Sunday</td>
-                <td>By Appointments Only</td>
-            </tr>
-        </table>
-    </div>
-
-    <div id="form">
-        <h4>Queries</h6>
-            For any other questions, comments or clarifications, please fill out the form underneath:
-            <form>
-                <fieldset>
-                    <label>Name:<br><input placeholder="Name"></label>
-                    <br>
-                    <label>Email Address<br><input type="email" placeholder="something@example.com"></label>
-                    <br>
-                    <label>Contact Number<br><input type="text" placeholder="***-***-****"></label>
-                    <br>
-                    <label>Description<br><input type="" placeholder="Please enter your commets here" style="width: 600px; height: 200px"></label>
-                    <br>
-                    <button>Submit</button>
-                </fieldset>
-            </form>
-    </div>
-
-
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 

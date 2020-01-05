@@ -7,28 +7,96 @@
 
 <head>
     <title>About Ayurveda</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada:700|Titillium+Web&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <div id="nav bar">
-        <img src="images/TempCompanyLogo.png">
-        <a href="mainpage.html">Home</a>
-        <a href="Ayurveda.html">About Ayurveda</a>
-        <a href="services.html">Services</a>
-        <a href="products.html">Products</a>
-        <a href="ContactUs.html">Contact Us</a>
-        <a href="https://www.facebook.com/">Facebook Page</a>
-    </div>
+    <div class="container">
 
-    <img src="images/ayurveda.png" style="height: 400px">
-    <h3>What is Ayurveda?</h3>
-    <p><span id="ayurveda">The Sanskrit term Ayurveda translates to “knowledge of life,” and the principles of this ancient wisdom remind us that the entire web of life is intricately interwoven. With a unique emphasis on total wellness, the art and science of Ayurveda work to harmonize our internal and external worlds.</span>
-        <br> Our five senses serve as the portals between the internal and external realms, as the five great elements of ether, air, fire, water, and earth dance the dance of creation around and within us. Ayurveda groups these five elements into three
-        basic types of energy and functional principles that are present in everybody and everything. Since there are no single words in English to describe these principles; we use the Sanskrit words Vata, Pitta, and Kapha to describe their combinations.
-        <br> Everything that we experience, be it a physical substance, a thought, or emotion, has certain qualities. The ancient texts of Ayurveda classify these qualities — called gunas in Sanskrit — into 10 pairs of opposites, making 20 qualities total
-        (for example, heavy vs. light). Theoretically, everything in the universe can be described in terms of these gunas, or qualities, including the doshas. The foundation of Ayurvedic treatment relies upon recognizing when gunas have become excessive
-        or deficient, as this is known to cause doshic imbalance and lead to disease. Ayurveda applies the opposite qualities to return to balance.</p>
-    <label>Refrence:<a href="https://www.ayurvedanama.org/what-is-ayurveda">National Ayurvedic Medical Association</a></label>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand">AYURHEB</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="mainpage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Ayurveda.html">About Ayurveda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="products.html" id="navbarProducts" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Products
+              </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarProducts">
+                            <a class="dropdown-item" href="products.html">LiverCare</a>
+                            <a class="dropdown-item" href="products.html">BrainCare</a>
+                            <a class="dropdown-item" href="products.html">BowelCare</a>
+                            <a class="dropdown-item" href="products.html">Probiotic</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="products.html">All Products</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ContactUs.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://www.facebook.com/">Facebook Page <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="ayureda-logo">
+            <h1>What is Ayurveda?</h1>
+            <img src="images/ayurveda.png" style="height: 400px">
+        </div>
+        <div class="content">
+            <p>The Sanskrit term Ayurveda translates to “knowledge of life,” and the principles of this ancient wisdom remind us that the entire web of life is intricately interwoven. With a unique emphasis on total wellness, the art and science of Ayurveda
+                work to harmonize our internal and external worlds.
+                <br> Our five senses serve as the portals between the internal and external realms, as the five great elements of ether, air, fire, water, and earth dance the dance of creation around and within us. Ayurveda groups these five elements
+                into three basic types of energy and functional principles that are present in everybody and everything. Since there are no single words in English to describe these principles; we use the Sanskrit words Vata, Pitta, and Kapha to describe
+                their combinations.
+                <br> Everything that we experience, be it a physical substance, a thought, or emotion, has certain qualities. The ancient texts of Ayurveda classify these qualities — called gunas in Sanskrit — into 10 pairs of opposites, making 20 qualities
+                total (for example, heavy vs. light). Theoretically, everything in the universe can be described in terms of these gunas, or qualities, including the doshas. The foundation of Ayurvedic treatment relies upon recognizing when gunas have
+                become excessive or deficient, as this is known to cause doshic imbalance and lead to disease. Ayurveda applies the opposite qualities to return to balance.</p>
+            <label>Refrence:<a href="https://www.ayurvedanama.org/what-is-ayurveda">National Ayurvedic Medical Association</a></label></div>
+
+        <div class="jumbotron content">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>The holistic approach, whether for healthy individuals or the diseased one cannot be doubted. Prevention of disease and promotion of health is the main aim of Ayurveda.</p>
+                    <p>Life in Ayurveda is conceived as the union of body, senses, mind and soul. Ayurveda treatment emphasizes the fact that any disorder/ illness can be managed by correcting the imbalance of 5 basic elements of life: </p>
+                    <ol>
+                        <li>Earth</li>
+                        <li>Water</li>
+                        <li>Air</li>
+                        <li>Fire</li>
+                        <li>Ether</li>
+
+                    </ol>Ayurveda focuses on eradicating the root cause of the disease and address the problem as per the Prakriti(constitution) of the individual. Harmonizing or balancing the Doshas(energetic forces) by taking into account physical factors,
+                    phycological facts and spirituality, makes healing natural, without any bad effects and improves the quality of health of the ailing population.
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/five.png" width="100%">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

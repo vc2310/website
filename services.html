@@ -7,49 +7,90 @@
 
 <head>
     <title>Services</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada:700|Permanent+Marker|Titillium+Web&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="nav bar">
-        <img src="images/TempCompanyLogo.png">
-        <a href="mainpage.html">Home</a>
-        <a href="Ayurveda.html">About Ayurveda</a>
-        <a href="services.html">Services</a>
-        <a href="products.html">Products</a>
-        <a href="ContactUs.html">Contact Us</a>
-        <a href="https://www.facebook.com/">Facebook Page</a>
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand">AYURHEB</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="mainpage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Ayurveda.html">About Ayurveda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="products.html" id="navbarProducts" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Products
+              </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarProducts">
+                            <a class="dropdown-item" href="products.html">LiverCare</a>
+                            <a class="dropdown-item" href="products.html">BrainCare</a>
+                            <a class="dropdown-item" href="products.html">BowelCare</a>
+                            <a class="dropdown-item" href="products.html">Probiotic</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="products.html">All Products</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ContactUs.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://www.facebook.com/">Facebook Page <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1>Services</h1>
+
+
+        <h4>Consultation</h4>
+        <p class="content">Ayurherb offers consultation in many aspects of human body including:</p>
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <p class="consultation">Mind Body Type Analysis</p>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <p class="consultation">Food Modifications</p>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <p class="consultation">Lifestyle Modifications</p>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <p class="consultation">Chronic Diseases</p>
+            </div>
+        </div>
+
+        <h4>Products</h4>
+        <p class="content">Ayurherb offers variety of products:</p>
+        <a href=" products.html " class="btn btn-success " role="button " aria-pressed="true ">LiverCare <span class="badge badge-light ">New</span></a>
+        <a href="products.html " class="btn btn-success " role="button " aria-pressed="true ">BrainCare</a>
+        <a href="products.html " class="btn btn-success " role="button " aria-pressed="true ">BowelCare</a>
+        <a href="products.html " class="btn btn-success " role="button " aria-pressed="true ">StressCare</a>
+        <a href="products.html " class="btn btn-success " role="button " aria-pressed="true ">Probiotics</a>
+
+        <h4>Seminars</h4>
+        <p class="content">Refer to the <a href="https://www.facebook.com/">facebook</a> Page to keep yourself updated with upcoming seminars</p>
+
     </div>
 
-    <h1>Services</h1>
-
-    <ol>
-        <li>
-            <h3>Consultation</h3>
-            <ul>
-                <li>Mind Body Type Analysis</li>
-                <li>Food Modifications</li>
-                <li>Lifestyle Modifications</li>
-                <li>Chronic Diseases</li>
-            </ul>
-        </li>
-        <li>
-            <h3>Products</h3>
-            <h6>*Approved by Government Of Canada</h6>
-            <ul>
-                <li><a href="products.html">LiverCare</a></li>
-                <li><a href="products.html">BrainCare</a></li>
-                <li><a href="products.html">BowelCare</a></li>
-                <li><a href="products.html">StressCare</a></li>
-                <li><a href="products.html">Probiotics</a></li>
-            </ul>
-        </li>
-        <li>
-            <h3>Seminars</h3>
-            <ul>
-                <li>Refer to the <a href="https://www.facebook.com/">facebook</a> Page</li>
-            </ul>
-        </li>
-    </ol>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 
