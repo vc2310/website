@@ -9,6 +9,7 @@
     <title>Services</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="modal.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada:700|Permanent+Marker|Titillium+Web&display=swap" rel="stylesheet">
 </head>
 
@@ -62,16 +63,97 @@
         <p class="content">Ayurherb offers consultation in many aspects of human body including:</p>
         <div class="row">
             <div class="col-lg-3 col-sm-6">
-                <p class="consultation">Mind Body Type Analysis</p>
+                <button class="consultation" onclick="display_BodyTypeAnalysis()">Body Type Analysis</button>
+            </div>
+            <!-- TheBodyTypeAnalysis Modal -->
+            <div id="BodyTypeAnalysis" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div style="clear: both">
+                        <h3 style="float: left">Body Type Analysis</h3>
+                        <h4 style="float: right">~40 mins</h4>
+                    </div>
+                    <p><em>The definition of Ayurveda is the dynamic state of balance between mind, body and environment.</em></p>
+                    <p>Ayurveda follows the concept of understanding the doshas in order to heal oneself. The three ayurvedic body types, or doshas, are Vata, Pitta and Kapha. Each type of dosha has a unique set of characteristics and the body type of a
+                        person depends on their physical and emotional attributes. To maintain good health and state of mind it is necessary to know your dosha, in order to practice suitable diet, exercise and lifestyle pattern. </p>
+                    <ul>
+                        <li>Personal analysis of dosha helps you know about your body and its requirements.</li>
+                        <li>Knowing your dosha can help you maintain optimal health.</li>
+                        <li>It will help you to maintain a good and balanced personal, family and professional life.</li>
+                        <li>Helps you to plan your lifestyle according to the requirements of your body.</li>
+                        <li>Dosha analysis will help you plan a balanced diet.</li>
+                        <li>This can help you to know how an imbalance is likely to occur in yourself.</li>
+                    </ul>
+                    <p>Here, at <strong>Ayurherb Wellness Center</strong>, we perform our uniquely designed body type analysis test where we can further predict you body type and start enhancing your life structure.</p>
+                </div>
+
             </div>
             <div class="col-lg-3 col-sm-6">
-                <p class="consultation">Food Modifications</p>
+                <button class="consultation" onclick="display_FoodModifications()">Food Modifications</button>
+            </div>
+            <!-- The Food Modifications Modal -->
+            <div id="FoodModifications" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div style="clear: both">
+                        <h3 style="float: left">Food Modifications</h3>
+                        <h4 style="float: right">~30 mins</h4>
+                    </div>
+                    <p><em>It’s based on the principles of Ayurvedic medicine and focuses on balancing different types of energy within your body, which is said to improve health.</em></p>
+                    <p>Unlike many other diets, the Ayurvedic diet provides personalized recommendations about which foods to eat and avoid based on your body type. It’s also popular because it’s not only said to promote better health for your body but also
+                        your mind.In Ayurveda, foods are categorized based on their physical qualities and the way they are said to affect your body. This helps determine which ingredients work best for different doshas.</p>
+
+                    <p>Here, at <strong>Ayurherb Wellness Center</strong>, after we predict your body type through the Body Type Analysis, we can further work into modifying your eating habits. By improving your diet as per Ayurveda, you are not just making
+                        your body healthy, but your mind too.</p>
+                </div>
+
             </div>
             <div class="col-lg-3 col-sm-6">
-                <p class="consultation">Lifestyle Modifications</p>
+                <button class="consultation" onclick="display_LifestyleModifications()">Lifestyle Modifications</button>
+            </div>
+            <!-- The Lifestyle Modifications Modal -->
+            <div id="LifestyleModifications" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div style="clear: both">
+                        <h3 style="float: left">Lifestyle Modifications</h3>
+                        <h4 style="float: right">~30 mins</h4>
+                    </div>
+                    <p><em>It’s based on the principles of Ayurvedic medicine and focuses on balancing different types of energy within your body, which is said to improve lifestyle of an individual.</em></p>
+                    <p>Knowledge of Ayurveda enables one to understand how to create this balance of body, mind and consciousness according to one’s own individual constitution and how to make lifestyle changes to bring about and maintain this balance.Just
+                        as everyone has a unique fingerprint, each person has a particular pattern of energy—an individual combination of physical, mental and emotional characteristics—which comprises their own constitution. This constitution is determined
+                        at conception by a number of factors and remains the same throughout one’s life.</p>
+                    <p>Here, at <strong>Ayurherb Wellness Center</strong>, after we predict your body type through the Body Type Analysis, we can further start looking into imprving ones lifestyle. This may be done by making a really small change as sleeping
+                        habbits or a big change such as work related stress distribution. After this treatment, the patients generally start realizing more positive vibes around them, hence leading to a better lifestyle.</p>
+                </div>
             </div>
             <div class="col-lg-3 col-sm-6">
-                <p class="consultation">Chronic Diseases</p>
+                <button class="consultation" onclick="display_ChronicDiseases()">Chronic Diseases</button>
+            </div>
+            <!-- The Chronic Diseases Modal -->
+            <div id="ChronicDiseases" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div style="clear: both">
+                        <h3 style="float: left">Chronic Diseases</h3>
+                        <h4 style="float: right">~20-50 mins</h4>
+                    </div>
+                    <p><em>"Herbs are much more elegant medicinal agents than pharmaceuticals in that they contain hundred to thousands of complex compounds that work together synergistically when confronted by disease organisms. The plants have been here much longer than people and they have developed extremely sophisticated responses to infections. when we take them internally, those responses are medicines for us. The very nature of stealth pathogens and their wide impacts on the body make herbs a very useful approach."</em>-Buhner,
+                        S
+                    </p>
+                    <p>In Ayurveda, this statement has been true for thousands of years, where the combined effect of various herbs or the whole herb is responsible for the therapeutic efficacy rather than action of a single active ingredient. The effectiveness
+                        of the whole herb instead of the active component has been shown in case of the well-researched, much publicized curcumin which is the active component of turmeric. Turmeric is used as an immunomodulator, anti- inflammatory agent
+                        or as an antioxidant. Curcumin alone is not effective as its bioavailability or effectiveness is very low due to low absorption, high rate of metabolism and rapid elimination and clearance from the body</p>
+                    <p>Similarly, at <strong>Ayurherb Wellness Center</strong>, all the medicines are herbal medications with no side effects. </p>
+                </div>
             </div>
         </div>
 
@@ -87,7 +169,7 @@
         <p class="content">Refer to the <a href="https://www.facebook.com/">facebook</a> Page to keep yourself updated with upcoming seminars</p>
 
     </div>
-
+    <script src="modal.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

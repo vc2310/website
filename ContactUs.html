@@ -113,18 +113,19 @@
                     <div id="form">
                         <h4>Queries</h4>
                         For any other questions, comments or clarifications, please fill out the form underneath:
-                        <form class="m-3">
+                        <form class="m-3" name="inquiery_form" onsubmit="return validateForm()">
                             <fieldset>
-                                <label>Name:<br><input placeholder="Name"></label>
+                                <label>Name:<br><input id = "name" name="name" placeholder="Name"></label>
                                 <br>
-                                <label>Email Address:<br><input type="email" placeholder="something@example.com"></label>
+                                <label>Email Address:<br><input id = "email" name="email" placeholder="something@example.com"></label>
                                 <br>
-                                <label>Contact Number:<br><input type="text" placeholder="***-***-****"></label>
+                                <label>Contact Number:<br><input name = "contact_number" placeholder="***-***-****"></label>
                                 <br>
                                 <label>Description:</label>
-                                <br><textarea name="message" rows="8" cols="50" placeholder="Write the description"></textarea>
+                                <br><textarea name="message" rows="8" cols="50" placeholder="Write the description" onkeyup="CharCounter(this)"></textarea>
                                 <br>
                                 <button type="submit" class="btn btn-primary">Submit</button>
+                                <p style="display:inline; justify-items: right;"><span id='char_count'>0</span> /350 characters</p>
                             </fieldset>
                         </form>
                     </div>
@@ -139,6 +140,7 @@
     </div>
 
     <script src="index.js"></script>
+    <script src="form_checker.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
