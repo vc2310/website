@@ -1,5 +1,13 @@
+// JQuery for "To Top" button -> https://www.jqueryscript.net/other/Auto-Show-Hide-Scroll-To-Top-Button-with-jQuery-gotop.html
+$('#goTop').goTop({
+    appear: 100,
+});
+
+//------THIS SECTION HAS BEEN REPLACED BY JQUERY FOR BETTER ANIMATIONS------------
+/*
 //This is the javascript code to make immage rollover happen every 2 seconds on the mainpage.html
 // The source for this code is https://www.w3schools.com/howto/howto_js_slideshow.asp
+
 var slideIndex = 0;
 showSlides();
 
@@ -18,7 +26,7 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block"; //Displaying slide
     dots[slideIndex - 1].className += " active"; //Setting the dot for the slide displayed above to actove
     setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
+}*/
 
 
 //This part of jascript is used to show the current EST in the store timings area

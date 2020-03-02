@@ -1,3 +1,14 @@
+//Doiong the hover effect by using JS on buttons
+var services = document.getElementsByClassName("consultation");
+for (var i = 0; i < services.length; i++) {
+    services[i].addEventListener("mouseover", function() {
+        this.style.color = "yellow";
+    });
+    services[i].addEventListener("mouseout", function() {
+        this.style.color = "white";
+    });
+}
+
 // Get the modal
 var BodyTypeAnalysis = document.getElementById("BodyTypeAnalysis");
 var FoodModifications = document.getElementById("FoodModifications");
@@ -28,18 +39,22 @@ function display_ChronicDiseases() {
 }
 
 // When the user clicks on <span> (x), close the modal
-span_bodyTypeAnalysis.onclick = function() {
-    BodyTypeAnalysis.style.display = "none";
-}
-span_foodModifications.onclick = function() {
-    FoodModifications.style.display = "none";
-}
-span_lifestyleModifications.onclick = function() {
-    LifestyleModifications.style.display = "none";
-}
-span_chronicDiseases.onclick = function() {
-    ChronicDiseases.style.display = "none";
-}
+span_bodyTypeAnalysis.addEventListener("click",
+    function() {
+        BodyTypeAnalysis.style.display = "none";
+    });
+span_foodModifications.addEventListener("click",
+    function() {
+        FoodModifications.style.display = "none";
+    });
+span_lifestyleModifications.addEventListener("click",
+    function() {
+        LifestyleModifications.style.display = "none";
+    });
+span_chronicDiseases.addEventListener("click",
+    function() {
+        ChronicDiseases.style.display = "none";
+    });
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {

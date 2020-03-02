@@ -11,9 +11,7 @@ function validateForm() {
     }
     //calling the email_checker function to check if email is in correct format 
     else if (email_checker(email) == false) {
-        alert("Please enter a valid email address in form \"something@example.com\"");
         return false;
-
     }
     //calling the contact_checker function to check if contact is in correct format 
     else if (contact_checker(contact_number) == false) {
@@ -22,7 +20,7 @@ function validateForm() {
     }
     //checking description
     else if (description == null || description == "" || description.length > 350) {
-        alert("Please write soemthing in decription(max 350 characters)");
+        alert("Please write something in decription(max 350 characters)");
         return false;
     }
     alert("Thank you for submitting your query"); //notifying user if everything is correct
@@ -32,7 +30,11 @@ function validateForm() {
 function email_checker(email) {
     var email_div = email.split("@"); //making sure "@" exists
     var email_end_div = email_div[email_div.length - 1].split("."); //making sure atleast one "." exist to check for domain
-    if (email == null || email == "" || email_div.length < 2 || email_end_div.length < 2) {
+    if (email == null || email == "") {
+        alert("Please enter an email address");
+        return false;
+    } else if (email_div.length != 2 || email_end_div.length < 2) {
+        alert("Please enter a valid email address in form \"something@example.com\"");
         return false;
     } else {
         return true;
@@ -52,8 +54,9 @@ function contact_checker(contact_number) {
 
 function CharCounter(characters) {
     document.getElementById('char_count').innerHTML = characters.value.length; //updating the char count
-    document.getElementById('char_count').style.color = 'black';
     if (characters.value.length > 350) {
         document.getElementById('char_count').style.color = 'red';
+    } else {
+        document.getElementById('char_count').style.color = 'black';
     }
 }
