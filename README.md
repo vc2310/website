@@ -1,4 +1,4 @@
-#consist of my website
+# consist of my website
 Please open "mainpage.html" to go the homepage of website
 
 
